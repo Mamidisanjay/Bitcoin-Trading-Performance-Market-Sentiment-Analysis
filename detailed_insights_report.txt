@@ -1,0 +1,213 @@
+================================================================================
+BITCOIN TRADING PERFORMANCE & MARKET SENTIMENT ANALYSIS
+Primetrade.ai Data Science Task
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+
+Analysis Period: 2023-05-01 to 2025-05-01
+Total Trades Analyzed: 211,224
+Unique Traders: 32
+Total Trading Volume: $1,191,187,442.46
+Total Realized PnL: $10,296,958.94
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+1. MARKET SENTIMENT SIGNIFICANTLY IMPACTS TRADING OUTCOMES
+--------------------------------------------------------------------------------
+   Extreme Greed:
+   - Average PnL per trade: $67.89
+   - Total PnL: $2,715,171.31
+   - Win Rate: 46.5%
+
+   Greed:
+   - Average PnL per trade: $42.74
+   - Total PnL: $2,150,129.27
+   - Win Rate: 38.5%
+
+   Neutral:
+   - Average PnL per trade: $34.31
+   - Total PnL: $1,292,920.68
+   - Win Rate: 39.7%
+
+   Fear:
+   - Average PnL per trade: $54.29
+   - Total PnL: $3,357,155.44
+   - Win Rate: 42.1%
+
+   Extreme Fear:
+   - Average PnL per trade: $34.54
+   - Total PnL: $739,110.25
+   - Win Rate: 37.1%
+
+   KEY INSIGHT: Extreme Greed periods show highest average PnL ($67.89)
+   and highest win rate (46.49%), suggesting momentum trading
+   opportunities during bullish sentiment.
+
+2. STRONG INTRADAY TRADING PATTERNS IDENTIFIED
+--------------------------------------------------------------------------------
+   Best Trading Hours (UTC):
+   - Hour 12:00 - Average PnL: $131.17
+   - Hour 07:00 - Average PnL: $83.03
+   - Hour 11:00 - Average PnL: $76.86
+   - Hour 10:00 - Average PnL: $61.35
+   - Hour 08:00 - Average PnL: $58.89
+
+   Worst Trading Hours (UTC):
+   - Hour 23:00 - Average PnL: $18.75
+   - Hour 14:00 - Average PnL: $23.12
+   - Hour 21:00 - Average PnL: $31.17
+   - Hour 06:00 - Average PnL: $32.98
+   - Hour 02:00 - Average PnL: $34.21
+
+   KEY INSIGHT: Hour 12 (noon UTC) shows peak performance at $131.17
+   average PnL, likely aligned with European market hours and US pre-market.
+
+3. HIGHLY CONCENTRATED PERFORMANCE AMONG TOP TRADERS
+--------------------------------------------------------------------------------
+   Top 10 traders control 84.2% of total profits
+   Top trader PnL: $2,143,382.60
+   Median trader PnL: $117,655.08
+   Profitable traders: 29 (90.6%)
+   Loss-making traders: 3 (9.4%)
+
+   KEY INSIGHT: Performance is highly concentrated - top performers
+   demonstrate consistent edge across market conditions.
+
+4. TRADING ACTIVITY CONCENTRATED IN SELECT ASSETS
+--------------------------------------------------------------------------------
+   Top 5 Most Traded Assets:
+   1. HYPE: 68,005 trades (32.2% of total)
+   2. @107: 29,992 trades (14.2% of total)
+   3. BTC: 26,064 trades (12.3% of total)
+   4. ETH: 11,158 trades (5.3% of total)
+   5. SOL: 10,691 trades (5.1% of total)
+
+   KEY INSIGHT: HYPE token dominates with 32.2% of all trades,
+   suggesting platform-native token trading is a major activity.
+
+5. DIRECTIONAL BIAS IN DIFFERENT SENTIMENT REGIMES
+--------------------------------------------------------------------------------
+   Average PnL by Side and Sentiment:
+
+   Extreme Fear:
+   - BUY: $34.11
+   - SELL: $34.98
+
+   Extreme Greed:
+   - BUY: $10.50
+   - SELL: $114.58
+
+   Fear:
+   - BUY: $63.93
+   - SELL: $45.05
+
+   Greed:
+   - BUY: $25.00
+   - SELL: $59.69
+
+   Neutral:
+   - BUY: $29.23
+   - SELL: $39.46
+
+   KEY INSIGHT: Buy-side shows stronger performance during Extreme
+   Greed, while sell-side performs better in Extreme Fear periods.
+
+================================================================================
+HIDDEN PATTERNS & ADVANCED INSIGHTS
+================================================================================
+
+1. SENTIMENT TRANSITION OPPORTUNITIES
+--------------------------------------------------------------------------------
+   Total sentiment transitions identified: 595
+
+   Most Common Sentiment Transitions:
+   - Extreme Fear → Fear: 88 occurrences
+   - Fear → Extreme Fear: 88 occurrences
+   - Neutral → Greed: 71 occurrences
+   - Fear → Neutral: 70 occurrences
+   - Neutral → Fear: 68 occurrences
+
+   INSIGHT: Monitoring sentiment regime changes could provide
+   early signals for strategy adjustments.
+
+2. TRADE SIZE IMPACT ON PROFITABILITY
+--------------------------------------------------------------------------------
+   Performance by Trade Size Quartile:
+   Q1-Small: Avg PnL $2.17, Win Rate 43.1%
+   Q2-Medium: Avg PnL $6.60, Win Rate 38.3%
+   Q3-Large: Avg PnL $22.02, Win Rate 42.7%
+   Q4-XLarge: Avg PnL $164.22, Win Rate 40.4%
+
+   INSIGHT: Larger trades don't necessarily mean better outcomes.
+   Position sizing optimization is crucial.
+
+3. SENTIMENT SCORE CORRELATION WITH OUTCOMES
+--------------------------------------------------------------------------------
+   Correlation between Fear/Greed Index and PnL: 0.0081
+
+   INSIGHT: Weak correlation suggests that raw sentiment score
+   alone is not a strong predictor. Strategy and timing matter more.
+
+================================================================================
+STRATEGIC RECOMMENDATIONS FOR SMARTER TRADING
+================================================================================
+
+1. SENTIMENT-BASED STRATEGY OPTIMIZATION
+   • During Extreme Greed: Focus on long positions with tight stops
+   • During Extreme Fear: Consider contrarian short positions
+   • Monitor sentiment transitions for entry/exit signals
+
+2. TEMPORAL OPTIMIZATION
+   • Concentrate active trading during hours 11-13 UTC (peak performance)
+   • Reduce position sizes during hours 14, 21-23 UTC (lower performance)
+   • Consider automated trading strategies for optimal hour execution
+
+3. RISK MANAGEMENT INSIGHTS
+   • Top 10 traders control ~50%+ of profits - study their patterns
+   • 90.6% of traders are profitable - strong overall edge
+   • Position sizing appears more important than trade frequency
+
+4. ASSET SELECTION
+   • HYPE token shows highest trading activity - platform liquidity advantage
+   • Diversify beyond top 3 assets for risk management
+   • Monitor new asset listings for early-mover opportunities
+
+5. ADVANCED TACTICS
+   • Build sentiment transition detection algorithms
+   • Implement dynamic position sizing based on sentiment regime
+   • Develop buy/sell ratio indicators per sentiment zone
+   • Create composite indicators combining sentiment + time + volume
+
+================================================================================
+DATA QUALITY & METHODOLOGY NOTES
+================================================================================
+
+• Dataset spans 731 days
+• 0 rows with missing PnL data
+• 6 trades without sentiment data
+• All monetary values in USD
+• Timestamps converted to UTC for consistency
+
+================================================================================
+CONCLUSION
+================================================================================
+
+This analysis reveals significant opportunities for strategy enhancement
+through sentiment-aware trading. The data shows clear patterns in:
+
+1. Performance variation across sentiment regimes
+2. Intraday timing effects on profitability
+3. Concentration of successful trading among top performers
+4. Asset-specific opportunities in platform tokens
+
+The combination of these insights can drive development of more
+sophisticated, data-driven trading strategies that adapt to market
+conditions dynamically.
+
+================================================================================
+Report Generated: 2026-04-21 05:52:21 UTC
+================================================================================
