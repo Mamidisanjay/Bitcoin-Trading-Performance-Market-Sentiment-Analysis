@@ -222,8 +222,8 @@ python generate_report.py
 ## 👤 Contact
 
 **Submission for**: Primetrade.ai Data Science Position  
-**Prepared by**: Data Science Candidate  
-**Date**: April 2026
+**Prepared by**: M.J.N.Sanjay  
+**Date**: April 21 2026
 
 ---
 
